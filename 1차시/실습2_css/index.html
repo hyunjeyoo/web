@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 사용하는 css 속성</title>
+    <!-- css 파일을 html에 연결합니다. -->
+    <link rel="stylesheet" href="../실습2_css/css/style.css">
+    <!-- 주소는 ./css/style.css와 같다 -->
+    <!-- 선택자는 tag선택자, class선택자, id선택자 3가지가 있다. -->
+</head>
+
+<!-- 여기서부터 수업 시작. -->
+<body>
+    <div class="container">
+        <h1>안녕하세요.</h1>
+        <h2>안녕하세요.</h2>
+        <h3>안녕하세요.</h3>
+        <h4>안녕하세요.</h4>
+        <h5>안녕하세요.</h5>
+        <h6>안녕하세요.</h6>
+    </div>
+
+
+    
+    <p class="item">paragraph의 p를 의미하며, 한 단락을 적는 태그입니다. 하나 이상의 문장으로 구성됩니다.</p>
+
+    <ul>
+        <li class="ul_lists">첫 번째 항목입니다.</li>
+        <li class="ul_lists">두 번째 항목입니다.</li>
+        <li class="ul_lists">세 번째 항목입니다.</li>
+    </ul>
+
+    <ol>
+        <li id="first-list">첫 번째 항목입니다.</li>
+        <li>두 번째 항목입니다.</li>
+        <li>세 번째 항목입니다.</li>
+    </ol>
+
+    <input type="text">
+    <input type="password" name="" id="">
+    <input type="number" name="" id="">
+    <input type="color" name="" id="">
+    <input type="date" name="" id="">
+
+    <form method="" action="">
+        <p>로그인</p>
+        <label for="id">아이디: </label>
+        <input type="text" id="id">
+        <label for="pw">비밀번호: </label>
+        <input type="password" id="pw">
+
+        <p>취미</p>
+        <label for="yoga">플라잉요가</label>
+        <input type="checkbox" name="hobby" id="yoga" checked>
+        <label for="cook">요리</label>
+        <input type="checkbox" name="hobby" id="cook">
+        <label for="piano">피아노</label>
+        <input type="checkbox" name="hobby" id="piano">
+
+        <p>성별</p>
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female">
+
+        <div>
+            <input class="btn" type="submit" value="Submit"> 
+            <input class="btn" type="reset" value="Reset">
+        </div>
+    </form>
+
+    <div>1</div>
+    <div>2</div>
+    <span>1</span>
+    <span>2</span>
+    <p>한 단락 안에서 <span>이렇게</span> 사용할 수 있습니다.</p>
+
+    <!-- div{}(선택자)에는 display(속성): block(속성값); 을 내포하고 있다. 보이지 않을 뿐 기본 설정이다.
+    span{}에는 display: inline; 을 내포하고 있다.
+    block은 한 줄을 통으로 쓰는 개념이기에 다음 콘텐츠가 나오면 그 콘텐츠는 다음 줄로 내려가서 쓰이게 된다.
+    inline은 한 줄을 이어서 쓰는 개념이기에 다음 콘텐츠가 나오면 그 콘텐츠는 오른쪽에 붙어서 쓰이게 된다.
+    div{}를 썼지만 span{}처럼 활용하고 싶다면 div{display: line;}을 쓰면 된다. -->
+
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+
+    <img src="./images/해달.jpg" width="500" alt="해달이">
+
+    <div class="box box1"></div>
+	<div class="box box2"></div>
+	<div class="box box3"></div>
+    <!-- 'html 및 css의 우선 순위'를 검색해보면 자세한 설명이 나온다.
+    box box1은 box_box1과 다르다. box 그리고 box1이다.
+    box1이 box 뒤에 있기에, box1의 css가 box의 css를 덮어쓴다. -->
+
+</body>
+</html>

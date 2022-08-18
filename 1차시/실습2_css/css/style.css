@@ -1,0 +1,103 @@
+/* css의 문법은
+    선택자 {
+        속성: 속성값;
+으로 이뤄진다. */    
+
+/* html 내 <span style="color: red;></span>의 경우
+        span이 선택자, style이 css, color가 속성, red가 속성값이다.
+    css 내 style {의 경우
+        style이 선택자, color가 속성, red가 속성값이다. */
+
+/* !*중요*! css에서 선택자는 '태그 선택자', 'class 선택자', 'id 선택자'로 구성돼있다.
+    class 선택자와 id 선택자의 기능은 유사하나 class 선택자는 중복이 가능하고, id 선택자는 단 한 번 사용한다. */
+
+
+
+/* 1. 태그 선택자 */
+
+div {
+    /* 태그의 테두리를 설정하는 속성입니다. */
+    border: 1px solid black;
+}
+li {
+    color: violet;
+}
+
+
+
+/* 2. class 선택자 (.을 빼먹지 않도록 주의합니다)
+    class 선택자를 쓸 때는 '.'를 써서 불러온다.
+    e.g.) class="container"의 경우
+            .container
+            만약 class="container"가 여러 개일 경우 모두를 인식하게 된다. */
+.container {
+    /* width와 height 속성은 각각 가로 길이, 세로 길이를 의미합니다. */
+    width: 200px;
+    height: 200px;
+    border: 1px dashed rgb(150, 71, 223);
+    /* 텍스트의 정렬을 의미합니다. */
+    text-align: center;
+    /* 그라데이션 효과를 줍니다. */
+    /* #238ccc, #c5e5ee */
+    background-image: linear-gradient(#238ccc, #c5e5ee);
+    color: white;
+    padding: 7rem 0;
+}
+/* px은 고정 단위 값인데, rem은 상대적인 값 */
+
+.ul_lists {
+    /* 글자 색상을 의미합니다. */
+    color:rgb(252, 138, 57);
+	/* 글자 크기를 의미합니다. */
+    font-size: 20px;
+    /* 글꼴 종류를 의미합니다. */
+    font-family: 나눔고딕,NanumGothic,돋움,Dotum;
+    /* 글꼴의 두께로, 미리 정의된 단어나 100 ~ 900 사이의 숫자를 통해 설정합니다.기본값은 normal 입니다. */
+    font-weight: bold;
+}
+
+
+
+/* 3. id 선택자(#을 빼먹지 않도록 주의합니다) */
+#first-list{
+    color: red;
+}
+
+
+
+.item {
+    /* margin과 padding 속성은 각각 바깥쪽 여백, 안쪽 여백을 의미합니다. */
+    margin: 200px;
+    padding: 100px;
+    border: 1px solid gray;
+}
+
+/* btn = button */
+.btn {
+    /* background 속성은 태그의 배경을 지정합니다. */
+    /* rgb(198, 138, 255) */
+    background-color: rgb(198, 138, 255);
+}
+
+.box{
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #039BE5;
+    border: 2px solid #01579B;
+}
+
+.box1{
+    /* border-radius 속성은 요소의 테두리를 둥글게 만들어줍니다. */
+    border-radius: 20px;
+}
+
+.box2{
+    width: 50px;
+    border-radius: 50%;    
+}
+
+.box3{
+    /* 4개의 모서리를 각각 다른 값으로도 줄 수 있습니다. (북서 북동 남동 남서로 시계방향 순서) */
+    border-radius: 20px 0 10px 50px;    
+}

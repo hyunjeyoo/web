@@ -1,0 +1,11 @@
+.container{
+    width: 600px;
+    height: 300px;
+    margin-bottom: 30px;
+    background-image: url("../images/아리.png");
+    border: 1px solid #AAA;
+}
+.item1{ background-repeat: no-repeat }
+.item2{ background-repeat: repeat-x }
+.item3{ background-repeat: repeat-y }
+.item4{ background-repeat: repeat }

@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem 4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 3rem;
+    transition: transform .5s;
+}
+
+
+
+.transform1:hover {
+    /* 가로 방향으로 10도 기울입니다. */
+    transform: skewX(10deg);
+}
+
+.transform2:hover {
+    /* 세로 방향으로 10도 기울입니다. */
+    transform: skewY(10deg);
+}
+
+.transform3:hover {
+    /* 가로 방향으로 20도, 세로 방향으로 10도 기울입니다. */
+    transform: skew(20deg, 10deg);    
+}

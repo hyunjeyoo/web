@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem 4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 3rem;
+    transition: transform .5s;
+}
+
+
+/* deg: degree */
+.transform1:hover {
+    /* 180도 둥글게 회전한다. */
+    transform: rotate(180deg);
+}
+.transform2:hover {
+    /* 가로로 180도 반전한다. */
+    transform: rotateX(180deg);
+}
+.transform3:hover {
+    /* 세로로 180도 반전한다. */
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,20 @@
+.grid {
+    /* 부모 요소에 그리드를 선언합니다. */
+    display: grid;
+    /* 이미지와 이미지 사이의 여백을 설정합니다. */
+    gap: 1rem;
+    /* 타일 하나의 가로 사이즈를 설정합니다. */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* auto-fit은 '알아서 가변적으로 자동적으로 맞춰라'는 명령어인데 repeat 속성값과 함께 써야한다.
+    최솟값은 240px, 최댓값은 1fraction(비율)
+    grid-template-columns: 50px 50px 50px;
+    == grid-template-columns: repeat(3, 50px);
+    repeat() 속성값은 (반복, 크기)로 이뤄져있다.
+    repeat(auto-fit, minmax());는 크기에 맞게 반복은 알아서 해라는 뜻 */
+}
+
+img {
+    width: 100%;
+    height: 240px;
+    /* <img> 요소와 같은 대체 요소의 콘텐츠 크기를 어떤 방식으로 조절해 요소에 맞출 것인지 지정합니다. */
+}

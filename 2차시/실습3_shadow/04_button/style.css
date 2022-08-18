@@ -1,0 +1,41 @@
+body {
+  padding: 2rem;
+}
+
+/* btn */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background: #5fb2c1;
+  border-radius: 5px;
+  /* 세로방향으로 3px이동 한 그림자 */
+  
+  position: relative;
+  /* 버튼 요소를 위로 2px 이동 */
+  
+}
+.btn:hover {
+  /* 세로방향으로 1px이동하여 눌려진 버튼 효과 */
+  
+  /* 버튼 요소를 아래로 1px 이동하여 누르는 듯한 효과 */
+  
+}
+
+/* btn2 */
+.btn2 {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px dashed #e38787;
+  background: #eda1a1;
+  /* 박스와 동일한 위치에 흐릿함 없이 크기가 5px인 그림자를 배경색과 같은 #eda1a1 색상으로 지정 */
+  
+}
+
+/* 마우스 커서를 올렸을 때 배경색과 점선 색을 바꿈 */

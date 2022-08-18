@@ -1,0 +1,40 @@
+.p-container {
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+/* static - 모든 태그들은 처음에 position: static 상태입니다. 차례대로 왼쪽에서 오른쪽, 위에서 아래로 쌓입니다. */
+span, div {
+    margin: 20px;
+    padding: 10px;
+    background: rgb(255, 206, 31);
+}
+
+/* relative - 원래 좌표를 기준으로 태그의 위치를 살짝 변경하고 싶을 때 position: relative를 사용합니다. top(위), right(오른쪽), bottom(아래), left(왼쪽) 속성을 사용해 위치 조절이 가능합니다. */
+.p-relative {
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+/* absolute - 절대 좌표로 위치를 지정해 줄 수 있습니다. position: static 속성을 가지고 있지 않은 조상을 기준으로 움직입니다. */
+.p-absolute-parent {
+    /* absolute 좌표 설정을 위한 부모 요소(기준점) */
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+/* fixed - 특정 위치에 고정할 수 있습니다. */
+.p-fixed-parent {
+    /* 스크롤을 위해 높이를 길게 설정하였습니다. */
+    height: 50vw;
+}
+.p-fixed {
+    position: fixed;
+    top: 0px;
+    right: 50%;
+}

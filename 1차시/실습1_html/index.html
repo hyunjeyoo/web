@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 사용하는 html 태그</title>
+    <!-- <style>
+        * {
+            margin: 30px;
+            padding: 10px;
+            border: 2px solid aquamarine;
+        }
+    </style> -->
+</head>
+
+<!-- 여기서부터 수업 시작. -->
+<!-- cmd+/를 치면 주석을 넣을 수 있는 공간이 나온다. -->
+
+<body>
+    <!-- 내용을 구분지어주는 박스. 역할은 없고 묶어주는 빈 상자일 뿐-->
+    <div style="border: 1px solid black;">
+        <!-- 가장 큰 제목을 쓰는 태그 -->
+        <h1>안녕하세요.</h1>
+        <!-- 그 다음 큰 제목을 쓰는 태그 -->
+        <h2>안녕하세요.</h2>
+        <h3>안녕하세요.</h3>
+        <h4>안녕하세요.</h4>
+        <h5>안녕하세요.</h5>
+        <!-- 가장 작은 제목을 쓰는 태그 -->
+        <h6>안녕하세요.</h6>
+    </div>
+    
+<!-- 코딩 중간에 밑에 추천란이 뜰 때 tab 키를 누르면 자동완성 된다. -->
+
+    <!-- p tag는 제목이 아닌 문장을 적어내는 역할이 있다. -->
+    <p>'paragraph'의 p를 의미하며, 한 단락을 적는 태그입니다. 하나 이상의 문장으로 구성됩니다.</p>
+
+    <!-- 순서가 없는 목록을 적는 태그입니다. ul: unordered list-->
+    <!-- nav bar라고 하는 것을 만들 때 쓰인다. li: list -->
+    <!-- li*3를 친 후 tab 키를 누르면 li tag 3개가 자동완성 된다. 단 특정한 라이브러리 설치가 필요할 때도 있다. -->
+    <ul>
+        <li>첫 번째 항복입니다.</li>
+        <li>두 번째 항목입니다.</li>
+        <li>세 번째 항목입니다.</li>
+    </ul>
+
+    <!-- 순서가 있는 목록을 적는 태그입니다. ol: ordered list-->
+    <ol>
+        <li>첫 번째 항복입니다.</li>
+        <li>두 번째 항목입니다.</li>
+        <li>세 번째 항목입니다.</li>
+    </ol>
+
+    <!-- 입력값을 받는 태그입니다. -->
+    <input type="text">
+    <!-- 비밀번호를 입력하는 타입입니다. -->
+    <input type="password" name="" id="">
+    <!-- 숫자를 입력하는 타입입니다. -->
+    <input type="number" name="" id="">
+    <!-- 색을 입력하는 타입입니다. -->
+    <input type="color" name="" id="">
+    <!-- 날짜를 입력하는 타입입니다. -->
+    <input type="date" name="" id="">
+
+    <!-- form 태그는 전체 양식을 의미하며, 서버로 보내는 역할을 줄 때 쓴다. 화면에 보이지 않게 묶어놓는 추상적인 태그라는 점은 div와 같다.-->
+    <form method="" action="">
+        <p>로그인</p>
+        <!-- 입력창에 명칭을 부여합니다. -->
+        <!-- 라벨 tag 안 for 속성에 id라고 해놨다. 이로써 form 태그 안 id 속성에 "id"라고 돼 있는 것은 모조리 다 인식한다. -->
+        <label for="id">아이디: </label>
+        <input type="text" id="id">
+
+        <label for="pw">비밀번호: </label>
+        <input type="password" id="pw">
+
+        <p>취미</p>
+        <!-- checkbox type는 한 개 이상을 체크하는 타입입니다. 같은 그룹은 name이 같아야합니다.-->
+        <!-- 예를 들어 name이 없다면? 취미 말고도 특기란 p tag도 있다면?체크박스가 똑같이 들어가게 된다. 그리고 서버에 혼동이 오기 쉽다. 이를 구분 짓기 위해 name이 쓰인다. -->
+        <label for="yoga">플라잉요가</label>
+        <input type="checkbox" name="hobby" id="yoga" checked>
+        
+        <label for="cook">요리</label>
+        <input type="checkbox" name="hobby" id="cook">
+        
+        <label for="piano">피아노</label>
+        <input type="checkbox" name="hobby" id="piano">
+
+        <p>성별</p>
+        <!-- radio type는 한 개만 체크하는 타입입니다. 같은 그룹은 name이 같아야합니다.-->
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male">
+        
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female">
+
+        <div>
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <!-- span 태그는 div 태그처럼 특별한 기능을 갖고있지 않고, 내용을 구분지어주는 태그입니다. 스타일링할 때 자주 쓰입니다.
+    div는 줄 바꿈이 되지만, span은 줄 바꿈이 되지 않는 차이가 있습니다. -->
+    <div>1</div>
+    <div>2</div>
+    <span>1</span>
+    <span>2</span>
+
+    <p>한 단락 안에서 span tag는 <span style="color: red;">이렇게</span> 사용할 수 있습니다.</p>
+    <!-- ;은 속성이 끝났다는 것을 의미한다. style 등 속성은 css인 경우가 많다. 지금은 css가 아닌 html을 활용해 설정했지만, 한계가 있기 때문에 오늘날에는 잘 쓰이지 않는다. -->
+
+    <!-- a(anchor) 태그는 href(hyper reference: 하이퍼 링크)를 걸어주는 태그입니다. -->
+    <a href="https://en.dict.naver.com/#/search?query=hyper%20reference">hyper reference의 사전적 의미</a>
+    <a href="https://en.dict.naver.com/#/search?query=hyper%20reference" target="_blank">hyper reference의 사전적 의미</a>
+    
+    <!-- img 태그는 이미지를 삽입 할 때 사용합니다. 얘는 닫는 태그가 없다. -->
+    <img src="./images/해달.jpg" alt="해달 사진" width="800">
+    <!-- 여기에 쓰인 alt 속성은 이미지를 불러오지 못할 경우 또는 이미지를 못 보는 경우 띄워주는 텍스트 -->
+
+</body>
+</html>
